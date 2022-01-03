@@ -161,7 +161,7 @@ h6 {
   background: rgb(144, 199, 209);
   transition: all 0.5s;
   z-index: 997;
-  height: 86px;
+  height: 40px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #header.fixed-top {
