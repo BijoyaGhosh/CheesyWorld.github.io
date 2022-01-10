@@ -816,7 +816,7 @@ section {
   text-align: center;
   width: 400px;
   height: 245px;
-  border: 4px solid #3c77be;
+  border: 4px solid #200444;
   padding: 5px;
   transition: all ease-in-out 0.3s;
   background: rgb(69, 187, 89);
@@ -842,10 +842,10 @@ section {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 30px;
 }
 .services .icon-box h4 a {
-  color: #222222;
+  color: #26c73b;
   transition: ease-in-out 0.3s;
 }
 .services .icon-box p {

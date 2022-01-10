@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>-->
     <meta charset="utf-8" />
     <meta content="width=device-  width, initial-scale=1.0" name="viewport" />
 
@@ -45,6 +46,24 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
+  <script>
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBTAE0IBalBmAzHgWuFl0Dg-yQzGyVJGSo",
+    authDomain: "my-project-530ca.firebaseapp.com",
+    databaseURL: "https://my-project-530ca-default-rtdb.firebaseio.com",
+    projectId: "my-project-530ca",
+    storageBucket: "my-project-530ca.appspot.com",
+    messagingSenderId: "423796376391",
+    appId: "1:423796376391:web:f5737fd7c27ffee9118262",
+    measurementId: "G-R5V0QL4P2S"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+   </script>
 
   <body>
     <!-- ======= Top Bar ======= -->
@@ -98,19 +117,31 @@
               <ul>
                 <!--<li><a href="Veg.html">Veg</a></li>-->
                 <li class="dropdown">
-                  <a href="#"
+                  <a href="Veg Items.html"
                     ><span>Veg</span>
                     <i class="bi bi-chevron-right"></i
                   ></a>
                   <ul>
                     <li><a href="Cheese balls.html">Cheese balls</a></li>
                     <li><a href="Cheese paratha.html">Cheese paratha</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
+                    <li><a href="Cheese garlic bread.html">Cheese garlic bread</a></li>
+                    <li><a href="Cheese potato.html">Cheese potatoes</a></li>
+                    <li><a href="Cheese pasta.html">Cheese pasta</a></li>
                   </ul>
                 </li>
-                <li><a href="Non Veg.html">Non Veg</a></li>
+                <li class="dropdown">
+                  <a href="Non-Veg Items.html"
+                    ><span>Non Veg</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="Cheesy chicken.html">Cheesy chicken</a></li>
+                    <li><a href="Spinach-Stuffed Chicken.html">Spinach Stuffed Chicken</a></li>
+                    <li><a href="Cheese pizza.html">Cheese pizza</a></li>
+                    <li><a href="Cheesy burger.html">Cheese Burger</a></li>
+                    <li><a href="Grilled cheese sandwich.html">Grilled cheese sandwich</a></li>
+                  </ul>
+                </li>
                 <!--<li><a href="#">Drop Down 3</a></li>
                 <li><a href="#">Drop Down 4</a></li>-->
               </ul>
