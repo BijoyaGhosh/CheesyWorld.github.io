@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <meta charset="utf-8" />
     <meta content="width=device-  width, initial-scale=1.0" name="viewport" />
 
@@ -46,6 +47,22 @@
   ======================================================== -->
   </head>
 
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBTAE0IBalBmAzHgWuFl0Dg-yQzGyVJGSo",
+      authDomain: "my-project-530ca.firebaseapp.com",
+      databaseURL: "https://my-project-530ca-default-rtdb.firebaseio.com",
+      projectId: "my-project-530ca",
+      storageBucket: "my-project-530ca.appspot.com",
+      messagingSenderId: "423796376391",
+      appId: "1:423796376391:web:f5737fd7c27ffee9118262",
+      measurementId: "G-R5V0QL4P2S",
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
   <body>
     <!-- ======= Top Bar ======= -->
     <!--<section id="topbar" class="d-flex align-items-center">
@@ -69,12 +86,7 @@
 
     <header id="header" class="d-flex align-items-center">
       <div
-        class="
-          container-fluid
-          d-flex
-          align-items-center
-          justify-content-space-around
-        "
+        class="container-fluid d-flex align-items-center justify-content-space-around"
       >
         <!--<h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -220,6 +232,17 @@
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
+            <!--<br /><br /><br /><br /><br /><br /><br /><br /><br />-->
+            <p>
+              These are our some useful sourcces by which you can reach us
+              anytime with your query. We will like to help you with our best.
+              Don't hesitate to contact with us if you face any kind of problem.
+              Feel free & stay with us. Spread our website so that other guys
+              can be benifited like you. Our mission is to provide people easier
+              way. And don't forget to let us know your feedback about our page.
+              your one comment can highly motivate us. Stay safe!
+            </p>
+            <br /><br />
             <iframe
               class="mb-4 mb-lg-0"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.693140384592!2d90.38452591498148!3d23.75831968458546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a6670ff7b5%3A0x482860448a3db18b!2sIndira%20Rd%2C%20Dhaka%201215!5e0!3m2!1sen!2sbd!4v1641146650125!5m2!1sen!2sbd"
@@ -247,7 +270,7 @@
                     required
                   />
                 </div>
-                <div class="col form-group">
+                <div class="form-group">
                   <input
                     type="email"
                     class="form-control"
@@ -272,6 +295,7 @@
                 <textarea
                   class="form-control"
                   name="message"
+                  id="message"
                   rows="5"
                   placeholder="Message"
                   required
@@ -285,7 +309,12 @@
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" onclick="show()">Send Message</button
+                ><br /><br />
+
+                <input type="" id="id1" name="name" placeholder="Name:" />
+                <br />
+                <button onclick="search()">Search</button>
               </div>
             </form>
           </div>
@@ -297,24 +326,24 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <!--<div class="footer-newsletter">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <h4>Join Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>
+              Tamen quem nulla quae legam multos aute sint culpa legam noster
+              magna
+            </p>
+            <form action="" method="post">
+              <input type="email" name="email" /><input
+                type="submit"
+                value="Subscribe"
+              />
+            </form>
           </div>
         </div>
-      </div>-->
+      </div>
+    </div>-->
 
       <div class="footer-top">
         <div class="container">
@@ -323,35 +352,36 @@
               <h3>Cheesy World<span>.</span></h3>
               <p class="text-white">
                 Indira Road <br />
+                Tejgaon <br />
                 Dhaka, 1215<br />
-                Bangladesh <br /><br />
+                Bangladesh <br /><br /><br />
                 <strong>Phone:</strong> 01313551765<br />
                 <strong>Email:</strong> ghosbijoya8@gmail.com<br />
               </p>
             </div>
 
             <!--<div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>-->
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Terms of service</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="#">Privacy policy</a>
+              </li>
+            </ul>
+          </div>-->
 
             <div class="col-lg-4 col-md-6 footer-links">
               <h4 class="text-white">Our Services</h4>
@@ -385,18 +415,30 @@
 
             <div class="col-lg-4 col-md-6 footer-links text-white">
               <h4 class="text-white">Our Social Networks</h4>
-              <!--<p>
-                Cras fermentum odio eu feugiat lide par naso tierra videa magna
-                derita valies
-              </p>-->
+              <p>
+                These are our social networks by which you can reach us anytime
+                with your query. We will like to help you with our best. Don't
+                hesitate to contact with us if you face any kind of problem.
+                Feel free & stay with us.
+              </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"
+                <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+                <a
+                  href="https://www.facebook.com/bijoya.ghosh.355"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/bijoya.ghosh.355/"
+                  class="instagram"
                   ><i class="bx bxl-instagram"></i
                 ></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
+                <a
+                  href="https://www.linkedin.com/in/bijoya-ghosh-22a10320a"
+                  class="linkedin"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
               </div>
             </div>
           </div>
