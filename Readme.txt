@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: BizLand
-Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Discover the joy of learning food recipes with cheese through "Cheesy World," a web development project I created utilizing HTML, CSS, JavaScript, and Firebase. Dive into delicious recipes and experience the seamless functionality and design that make Cheesy World a delightful culinary resource.
